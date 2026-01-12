@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blob - Demo Links</title>
+    <style>
+        :root {
+            --primary: #0066cc;
+            --success: #28a745;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #212529;
+            --muted: #6c757d;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            color: var(--muted);
+            font-size: 1.1rem;
+        }
+        
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .card h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+        
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: var(--bg);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .link-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: white;
+            border-radius: 8px;
+            font-size: 1.5rem;
+        }
+        
+        .icon.folder { background: #f0ad4e; }
+        .icon.excel { background: #217346; }
+        .icon.pdf { background: #dc3545; }
+        
+        .link-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .link-info p {
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        
+        .info-box {
+            background: #e7f3ff;
+            border-left: 4px solid var(--primary);
+            padding: 1rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin-top: 1rem;
+        }
+        
+        .info-box h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+        
+        .info-box p {
+            font-size: 0.9rem;
+            color: var(--muted);
+        }
+        
+        .badge {
+            display: inline-block;
+            background: var(--success);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        footer {
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📦 The Blob</h1>
+            <p class="subtitle">Secure File Browser Demo</p>
+            <span class="badge">Referrer Validation Demo</span>
+        </header>
+        
+        <div class="card">
+            <h2>Test Links</h2>
+            <p style="color: var(--muted); margin-bottom: 1rem;">
+                Click these links to test the referrer-based access control. 
+                These links will only work when clicked from this page (not copy/pasted).
+            </p>
+            
+            <div class="links">
+                <a href="https://wonderful-sea-0df44b70f.2.azurestaticapps.net/?ref=eyJjb250YWluZXIiOiJhcnRpZmFjdC1mbSIsImRpcmVjdG9yeUlkIjoiOEU1RDg3OEMtRTk1OS00OERCLUFDMzUtODU2NEIyMkExMzU5In0%3D" 
+                   class="link-item" target="_blank">
+                    <div class="icon folder">📁</div>
+                    <div class="link-info">
+                        <h3>Browse Folder</h3>
+                        <p>View folder contents with navigation</p>
+                    </div>
+                </a>
+                
+                <a href="https://wonderful-sea-0df44b70f.2.azurestaticapps.net/?ref=eyJjb250YWluZXIiOiJhcnRpZmFjdC1mbSIsImZpbGVJZCI6IjE5MDA2QUZELTM3QUItNjgzMC03NTUzLTNBMURDRjY2MjAyRSJ9" 
+                   class="link-item" target="_blank">
+                    <div class="icon excel">📊</div>
+                    <div class="link-info">
+                        <h3>Excel File</h3>
+                        <p>View spreadsheet with preview</p>
+                    </div>
+                </a>
+                
+                <a href="https://wonderful-sea-0df44b70f.2.azurestaticapps.net/?ref=eyJjb250YWluZXIiOiJhcnRpZmFjdC1mbSIsImZpbGVJZCI6Ijc2QzRGNjFCLUNDNDYtOEI3My1BRTlGLTNBMURDRjY2MjBCRSJ9" 
+                   class="link-item" target="_blank">
+                    <div class="icon pdf">📄</div>
+                    <div class="link-info">
+                        <h3>PDF Document</h3>
+                        <p>View PDF with inline preview</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>How It Works</h2>
+            <div class="info-box">
+                <h3>✅ Clicking from this page</h3>
+                <p>The browser sends the <code>Referer</code> header with this page's URL. 
+                   The Blob validates this and allows access.</p>
+            </div>
+            <div class="info-box" style="background: #fff3cd; border-left-color: #f0ad4e; margin-top: 1rem;">
+                <h3>❌ Copy/pasting the URL directly</h3>
+                <p>No referrer is sent. The Blob rejects the request with 
+                   "This content is only available from within SilverShare."</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Demo page for The Blob referrer validation</p>
+            <p>GitHub Pages sends <code>Referrer-Policy: strict-origin-when-cross-origin</code></p>
+        </footer>
+    </div>
+</body>
+</html>
